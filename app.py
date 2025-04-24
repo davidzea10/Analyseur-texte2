@@ -6,8 +6,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-# Charger le modèle français
-nlp = spacy.load("fr_core_news_sm")
+import fr_core_news_sm
+nlp = fr_core_news_sm.load()
 
 # Configuration de la page
 st.set_page_config(page_title="Analyseur de Texte Intelligent", layout="wide")
